@@ -17,6 +17,8 @@
     <commentGenerator>
       <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
       <property name="suppressAllComments" value="false"/>
+      <!--是否去除自动生成的注释包含时间戳 true：是： false:否 -->
+      <property name="suppressDate" value="true"/>
     </commentGenerator>
     <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
     <jdbcConnection driverClass="${mysql_driver}"
@@ -63,35 +65,20 @@
     <!--<property name="useActualColumnNames" value="true"/>-->
     <!--</table>-->
 
-<!--    <table schema="" tableName="aep_sim_param">
-      &lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;
-      <property name="useActualColumnNames" value="true"/>
-    </table>-->
+    <!--    <table schema="" tableName="aep_sim_param">
+          &lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;
+          <property name="useActualColumnNames" value="true"/>
+        </table>-->
 
-<!--    <table schema="" tableName="aep_solver">
-      &lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;
-      <property name="useActualColumnNames" value="true"/>
-    </table>-->
+    <!--    <table schema="" tableName="aep_solver">
+          &lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;
+          <property name="useActualColumnNames" value="true"/>
+        </table>-->
 
     <table schema="" tableName="spm_model_param">
       <!--生成的字段名称与数据库中名称一致-->
       <property name="useActualColumnNames" value="true"/>
     </table>
 
-
-    <!--<table schema="" tableName="health_device_part">-->
-    <!--&lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;-->
-    <!--<property name="useActualColumnNames" value="true"/>-->
-    <!--</table>-->
-
-    <!--<table schema="" tableName="health_result_data">-->
-    <!--&lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;-->
-    <!--<property name="useActualColumnNames" value="true"/>-->
-    <!--</table>-->
-
-    <!--<table schema="" tableName="health_result_pic">-->
-    <!--&lt;!&ndash;生成的字段名称与数据库中名称一致&ndash;&gt;-->
-    <!--<property name="useActualColumnNames" value="true"/>-->
-    <!--</table>-->
   </context>
 </generatorConfiguration>
